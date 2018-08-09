@@ -40,7 +40,9 @@ function anotherExample(firstLine, lastLine) {
 
  You can also make text **bold**... whoa!
 
- > Block Quotes!
+	
+> Quoted text.
+> > Quoted quote.> Quoted quote
 
 ![React Logo w/ Text](https://goo.gl/Umyytc)
 
