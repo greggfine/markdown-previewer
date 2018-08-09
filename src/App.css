@@ -1,13 +1,101 @@
 body {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: Arial, sans-serif;
+	background-color: #eee;
+}
+
+#editor {
+	flex-basis: 45%;
+	height: 60vh;
+	border: 7px solid #CDDB63;
+	border-top: 30px solid #CDDB63;
+	padding: 15px;
+	position: relative;
+	font-size: .9rem;
+}
+
+
+.flex-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	height: 75vh;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 190px 0px;
+}
+
+i {
+	color: rgba(1, 1, 1, .5);
+	padding-right: 12px;
+	font-size: 1.5rem;
 }
 
 #preview {
+	flex-basis: 45%;
 	border: 1px solid black;
-	width: 700px;
-	height: 1200px;
+	height: 60vh;
+	font-size: .9rem;
+	overflow: hidden;
+	border: 7px solid #CDDB63;
+	border-top: 30px solid #CDDB63;
+	padding: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
 }
+
+#slanted-line {
+	width: 200px;
+	height: 0px;
+	color: #000;
+	border: 1px solid;
+	transform: rotate(-5deg);
+	position: absolute;
+	top: 62px;
+	color: #CDDB63;
+	box-shadow: 4px 3px 0 #7664644a;
+
+}
+
+#section-titles {
+	font-family: 'Reem Kufi', sans-serif;
+	font-weight: 200;
+	color: rgba(52, 15, 59, .55);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+	margin-bottom: -260px;
+}
+
+#title {
+	font-family: 'Reem Kufi', sans-serif;
+	color: #82458D;
+	letter-spacing: 6.7px;
+	font-weight: 700;
+	position: relative;
+	width: 400px;
+	margin: 30px auto -60px auto;
+	font-size: 2.2rem;
+}
+
+#title::first-letter {
+	font-size: 2.5rem;
+}
+
+#title > span {
+	color: rgba(0, 1, 0, 0.70);
+	letter-spacing: 2.4px;
+	font-weight: 400;
+}
+
 

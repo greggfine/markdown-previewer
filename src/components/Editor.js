@@ -23,30 +23,29 @@ class Editor extends Component{
 		const defaultText = 
 `# Header
 ## sub header
-There's also [links](https://www.freecodecamp.com)
-Heres some code, \`<div></div>\`, between 2 backticks.
+Check out my [link](https://www.freecodecamp.com)
+Look at my div, \`<div></div>\`
 \`\`\`
 // this is multi-line code:
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-    return multiLineCode;
+function sayName(firstName, lastName) {
+  if (firstName == '\`\`\`' && lastName == '\`\`\`') {
+    return sayName;
   }
 }
 \`\`\`
-- And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
+- Check out these lists.
+  - This is bulleted.
+     - This has an indentation level.
+        - That looks like so.
 
- You can also make text **bold**... whoa!
+ And now make some text look **bold**... wheeeee!
 
 	
-> Quoted text.
-> > Quoted quote.> Quoted quote
+> Quote
+> > Shakespeare > "Hell is empty and all the devils are here."
 
-![React Logo w/ Text](https://goo.gl/Umyytc)
+![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Antu_text-x-markdown.svg/200px-Antu_text-x-markdown.svg.png)
 
-  
 `
 
 		this.setState({
@@ -56,8 +55,8 @@ function anotherExample(firstLine, lastLine) {
 
 	render(){
 		return (
-			<div>
-				<textarea id="editor" cols="30" rows="10"
+			<div className="flex-container">
+				<textarea id="editor" 
 					onChange={ this.handleUserInput } >
 					{ this.state.userInput }
 				</textarea>

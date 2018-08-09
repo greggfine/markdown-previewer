@@ -12,13 +12,38 @@ const Preview = ({ userInput }) => {
 	}
 
 	return (
-		<div id="preview" dangerouslySetInnerHTML = { createMarkup() } />
+		<div className="flex-container" id="preview" dangerouslySetInnerHTML = { createMarkup() } />
 	)
 }
 
 
 
 export default Preview;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
